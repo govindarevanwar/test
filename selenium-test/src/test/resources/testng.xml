@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite" parallel="methods" thread-count="5">
+  <listeners>
+    <!--   <listener class-name="selenium-test.src.test.java.com.orangehrm.common.TestListner"/> -->
+      <listener class-name="com.orangehrm.common.TestListner"/>
+      </listeners>
+  <test verbose="2" name="Default test">
+    <classes>
+<!--       <class name="com.orangehrm.test.AddUserTest"/>
+      <class name="com.orangehrm.test.LoginTest"/>
+      <class name="com.orangehrm.test.FrameTest"/>
+ -->
+       <class name="com.orangehrm.test.AddUserTest"/> 
+ <!-- class name="com.orangehrm.test.LoginTest"/>
+  -->
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->

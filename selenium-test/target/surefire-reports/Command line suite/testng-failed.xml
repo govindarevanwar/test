@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="com.orangehrm.common.TestListner"/>
+      <class name="com.orangehrm.test.AbstractTest"/>
+      <class name="com.orangehrm.test.AddUserTest"/>
+      <class name="com.orangehrm.test.FrameTest"/>
+      <class name="com.orangehrm.test.LoginTest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.orangehrm.test.AddUserTest">
+        <methods>
+          <include name="addNewUser"/>
+        </methods>
+      </class> <!-- com.orangehrm.test.AddUserTest -->
+      <class name="com.orangehrm.test.LoginTest">
+        <methods>
+          <include name="externalLinkTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.test.LoginTest -->
+      <class name="com.orangehrm.test.FrameTest">
+        <methods>
+          <include name="multipleFrames"/>
+        </methods>
+      </class> <!-- com.orangehrm.test.FrameTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
